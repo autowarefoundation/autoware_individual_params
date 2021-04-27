@@ -2,7 +2,7 @@
 
 This repository stores parameters that are different from each vehicle.
 
-## Rational
+## Rationale
 
 The parameters were originally managed in `launcher` repository.
 Why we manage them in a separate repository are:

@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(individual_params)
 
-add_compile_options(-std=c++14)
-
 find_package(ament_cmake_auto REQUIRED)
 
 ament_auto_find_build_dependencies()

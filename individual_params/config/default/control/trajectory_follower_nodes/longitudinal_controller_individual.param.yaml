@@ -1,0 +1,47 @@
+/**:
+  ros__parameters:
+    delay_compensation_time: 0.17
+
+    # drive state
+    kp: 1.0
+    ki: 0.1
+    kd: 0.0
+    max_out: 1.0
+    min_out: -1.0
+    max_p_effort: 1.0
+    min_p_effort: -1.0
+    max_i_effort: 0.3
+    min_i_effort: -0.3
+    max_d_effort: 0.0
+    min_d_effort: 0.0
+    lpf_vel_error_gain: 0.9
+    current_vel_threshold_pid_integration: 0.5
+    brake_keeping_acc: -0.2
+
+    # smooth stop state
+    smooth_stop_max_strong_acc: -0.5
+    smooth_stop_min_strong_acc: -1.0
+    smooth_stop_weak_acc: -0.3
+    smooth_stop_weak_stop_acc: -0.8
+    smooth_stop_strong_stop_acc: -3.4
+    smooth_stop_max_fast_vel: 0.5
+    smooth_stop_min_running_vel: 0.01
+    smooth_stop_min_running_acc: 0.01
+    smooth_stop_weak_stop_time: 0.8
+    smooth_stop_weak_stop_dist: -0.3
+    smooth_stop_strong_stop_dist: -0.5
+
+    # pitch
+    lpf_pitch_gain: 0.95
+
+    # vehicle parameters
+    vehicle:
+      cg_to_front_m: 1.228
+      cg_to_rear_m: 1.5618
+      mass_kg: 2400.0
+      mass_fl: 600.0
+      mass_fr: 600.0
+      mass_rl: 600.0
+      mass_rr: 600.0
+      cf: 155494.663
+      cr: 155494.663

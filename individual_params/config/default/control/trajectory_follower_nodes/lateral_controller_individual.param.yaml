@@ -1,0 +1,45 @@
+/**:
+  ros__parameters:
+
+    # -- mpc optimization --
+    mpc_weight_lat_error: 0.1                    # lateral error weight in matrix Q
+    mpc_weight_heading_error: 0.0                # heading error weight in matrix Q
+    mpc_weight_heading_error_squared_vel: 0.3    # heading error * velocity weight in matrix Q
+    mpc_weight_steering_input: 1.0               # steering error weight in matrix R
+    mpc_weight_steering_input_squared_vel: 0.25  # steering error * velocity weight in matrix R
+    mpc_weight_lat_jerk: 0.0                     # lateral jerk weight in matrix R
+    mpc_weight_steer_rate: 0.0                   # steering rate weight in matrix R
+    mpc_weight_steer_acc: 0.000001               # steering angular acceleration weight in matrix R
+    mpc_low_curvature_weight_lat_error: 0.1                    # lateral error weight in matrix Q in low curvature point
+    mpc_low_curvature_weight_heading_error: 0.0                # heading error weight in matrix Q in low curvature point
+    mpc_low_curvature_weight_heading_error_squared_vel: 0.3    # heading error * velocity weight in matrix Q in low curvature point
+    mpc_low_curvature_weight_steering_input: 1.0               # steering error weight in matrix R in low curvature point
+    mpc_low_curvature_weight_steering_input_squared_vel: 0.25  # steering error * velocity weight in matrix R in low curvature point
+    mpc_low_curvature_weight_lat_jerk: 0.0                     # lateral jerk weight in matrix R in low curvature point
+    mpc_low_curvature_weight_steer_rate: 0.0                   # steering rate weight in matrix R in low curvature point
+    mpc_low_curvature_weight_steer_acc: 0.000001               # steering angular acceleration weight in matrix R in low curvature point
+    mpc_low_curvature_thresh_curvature: 0.0                    # threshold of curvature to use "low_curvature" parameter (recommend: 0.01~0.03)
+    mpc_weight_terminal_lat_error: 1.0           # terminal lateral error weight in matrix Q to improve mpc stability
+    mpc_weight_terminal_heading_error: 0.1       # terminal heading error weight in matrix Q to improve mpc stability
+    mpc_zero_ff_steer_deg: 0.5                   # threshold that feed-forward angle becomes zero
+    mpc_acceleration_limit: 2.0                  # limit on the vehicle's acceleration
+    mpc_velocity_time_constant: 0.3              # time constant used for velocity smoothing
+
+    # -- vehicle model --
+    input_delay: 0.24                # steering input delay time for delay compensation
+
+    # -- lowpass filter for noise reduction --
+    steering_lpf_cutoff_hz: 3.0 # cutoff frequency of lowpass filter for steering command [Hz]
+    error_deriv_lpf_cutoff_hz: 5.0
+
+    # vehicle parameters
+    vehicle:
+      cg_to_front_m: 1.228
+      cg_to_rear_m: 1.5618
+      mass_kg: 2400.0
+      mass_fl: 600.0
+      mass_fr: 600.0
+      mass_rl: 600.0
+      mass_rr: 600.0
+      cf: 155494.663
+      cr: 155494.663

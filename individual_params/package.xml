@@ -3,8 +3,8 @@
 <package format="3">
   <name>individual_params</name>
   <version>0.1.0</version>
-  <description>The individual_params package</description>
-  <maintainer email="ryohsuke.mitsudome@tier4.jp">Ryohsuke Mitsudome</maintainer>
+  <description>The individual_params package for sample_mobile_robot</description>
+  <maintainer email="azumi.suzuki@tier4.jp">azumi-suzuki</maintainer>
   <license>Apache License 2.0</license>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>

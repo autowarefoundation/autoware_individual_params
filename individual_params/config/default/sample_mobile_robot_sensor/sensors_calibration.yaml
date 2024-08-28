@@ -1,0 +1,15 @@
+base_link:
+  sensor_kit_base_link: # sensor_kit_base_link = xt32_top_base_link
+    x: 0.344
+    y: 0.0
+    z: 1.103
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+  imu_link:
+    x: -0.096
+    y: 0.0
+    z: 0.3886
+    roll: 3.1415926535
+    pitch: 0.0
+    yaw: 1.570796327
